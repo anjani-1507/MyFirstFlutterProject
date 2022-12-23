@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,14 +12,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Data Types in Dart
+
+    //int days = 30; //integer datatype
+    //double cost = 0.0; //double or float datatype
+    //String name = "Anjani"; //string datatype
+    //bool isMale = true; //boolean datatype
+    //num rent = 2000.0; //can take both int as well as double values
+
+    //var day = "Tuesday"; //use var if don't want to declare variable type explicitly
+    //const pi = 3.14; //for constant values
+
+    //String message = "Welcome $name, to $days Days of Flutter in Rs. $cost"; //string interpolation
+
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome to Your First App"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
